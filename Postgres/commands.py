@@ -105,6 +105,8 @@
 'Export a data to a CSV file'
 #   \copy (SELECT * FROM tablename) TO 'path/to/file.csv' DELIMITER ',' CSV HEADER;
 
+''
+
 'database dump'
 #pg_dump -Fc -h 127.0.0.1 -U postgres -d ecommerce_db -f /home/pga/Documents/DJANGO/OWN\ PROJECTS/E-commerce/ecompro/ecommerce_db.dump
 
