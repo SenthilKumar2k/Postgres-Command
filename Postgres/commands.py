@@ -71,6 +71,9 @@
 'drop table'
 #   DROP TABLE table_name;
 
+'Count the number of rows in a table:'
+#   SELECT count(*) FROM tablename;
+
 'insert data into a table'
 #   INSERT INTO tablename(column1, column2, column3) VALUES(value1, value2, value3);
 
