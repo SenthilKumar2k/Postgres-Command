@@ -4,6 +4,9 @@
 'help with the psql command options, you can use' 
 #   psql --help
 
+'check current postgrseql version'
+#   SELECT version();
+
 'Exit the psql promt'
 #   \q
 
