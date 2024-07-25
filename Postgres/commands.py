@@ -1,6 +1,9 @@
 'connecting to postgres database'
 #   psql -h localhost -p port -U username -d database  
 
+'help with the psql command options, you can use' 
+#   psql --help
+
 'Exit the psql promt'
 #   \q
 
