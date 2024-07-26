@@ -55,6 +55,15 @@
 'Create new User'
 #   CREATE USER senthil WITH PASSWORD 'password';
 
+'create a superuser'
+# CREATE USER username WITH SUPERUSER PASSWORD 'password';
+
+'change a user password'
+# ALTER USER username WITH PASSWORD 'new_password';
+
+'Drop a user'
+# DROP USER username;
+
 'GRANT privileges to a user'
 #   GRANT ALL PRIVILEGES ON DATABASE database_name TO user;
 
@@ -102,6 +111,9 @@
 #   SELECT * FROM tablename;
 #   SELECT column1, column2 FROM tablename WHERE condition;
 
+'Select distinct values'
+# SELECT DISTINCT column_name FROM table_name;
+
 'Update data in a table'
 #   UPDATE tablename SET column1=value1, column2=value2 WHERE condition;
 
@@ -115,10 +127,10 @@
 #   \copy (SELECT * FROM tablename) TO 'path/to/file.csv' DELIMITER ',' CSV HEADER;
 
 'Using joins (inner join)'
+# SELECT a.column1, b.column2 FROM table1 a INNER JOIN table2 b ON a.common_column = b.common_column;
 
-"""SELECT a.column1, b.column2
-FROM table1 a
-INNER JOIN table2 b ON a.common_column = b.common_column;"""
+'Using left join'
+# SELECT a.column1, b.column2 FROM table1 a LEFT JOIN table2 b ON a.common_column = b.common_column;
 
 'Using right join'
 # SELECT a.column1, b.column2 FROM table1 a RIGHT JOIN table2 b ON a.common_column = b.common_column;
@@ -128,3 +140,12 @@ INNER JOIN table2 b ON a.common_column = b.common_column;"""
 
 'restore database dump'
 #pg_restore -d ecommerce_db -h 127.0.0.1 -U postgres ecommerce_db.dump
+
+
+# Transaction Management
+'Begin a transaction'
+# BEGIN;
+'Commit a transaction'
+# COMMIT;
+'Rollback a transaction'
+# ROLLBACK;
